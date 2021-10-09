@@ -1,7 +1,7 @@
 //MAU NGAPAIN OM?
 //NOTE KALO ADA YANG JUAL BELI KAN SC INI LANGSUNG HUBUNGI SAYA!!
 //TXT TO :
-/*Ardy ( Ya Gw Lah ) [ Base Bot ]
+/*El ( Ya Gw Lah ) [ Base Bot ]
 Fardan [ Colab ]
 Zeks Api [Penyedia Apikey]
 AbilGans [Penyedia Apikey]
@@ -52,22 +52,22 @@ const { ind } = require('./bahasa')
 /************ SETTINGS ********/
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Mastah Ardy🤡\n'
-            + 'ORG: Mastah Ardy🤡;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=6287863200063:+6287863200063\n'  
+            + 'FN:Billy🤡\n'
+            + 'ORG: Billy🤡;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=628819300323:+628819300323\n'  
             + 'END:VCARD' 
 prefix = '#' 
 blocked = [] 
 limitawal = 999 
 memberlimit = 1 
-NameBot = 'Ardy Bot'
-fakedoc = "PunyaArdy🤡"
-fakereply = "ArdyNihBoss🤡"
-faketoko = "ArdyStore🤡"
+NameBot = 'Billz BOT WA'
+fakedoc = "PunyaBilly🤡"
+fakereply = "BillyNihBoss🤡"
+faketoko = "BillyStore🤡"
 imgbb = 'https://i.postimg.cc/zfHLySXF/20210626-102411.jpg'
-lolkey = 'YourApikey'
+lolkey = 'farhan'
 xteam = 'AbilGanss'
-const ownerNumber = ["6287863200063@s.whatsapp.net"]   
+const ownerNumber = ["628819300323@s.whatsapp.net"]   
 
 
 
@@ -269,7 +269,7 @@ function kyun(seconds){
 
 const Ardy = new WAConnection()
 Ardy.version = [2, 2119, 6] // UDAH JANGAN GANTI NANTI EROR
-Ardy.browserDescription = [ 'ArdyNihBoss', 'Browser', '999' ]
+Ardy.browserDescription = [ 'BillyNihBoss', 'Browser', '999' ]
    Ardy.on('qr', qr => {
    qrcode.generate(qr, { small: true })
    console.log(color('[','white'),color('∆','red'),color(']','white'),color('QR code is ready, Scan now..','white'))
@@ -325,7 +325,7 @@ Ardy.on('group-participants-update', async (anu) => {
 	})
 Ardy.on('message-update', async (mek) => {
 		try {
-		//Fix Undefined By Ardy Store
+		//Fix Undefined By Billy Store
 	   const from = mek.key.remoteJid
 		const messageStubType = WA_MESSAGE_STUB_TYPES[mek.messageStubType] || 'MESSAGE'
 		const dataRevoke = JSON.parse(fs.readFileSync('./src/gc-revoked.json'))
@@ -387,7 +387,7 @@ Ardy.on('message-update', async (mek) => {
 - *Waktu :* *${moment.unix(int.timestamp).format('HH:mm:ss')}*
 - *Tanggal :* *${moment.unix(int.timestamp).format('DD/MM/YYYY')}*
 - *Pesan :* *${body ? body : '-'}*`
-				Ardy.sendMessage(from, strConversation, MessageType.text, selepbot72)
+				Ardy.sendMessage(from, strConversation, MessageType.text, Billybot72)
 			} else if (int.type == 'stickerMessage') {
 				var itsme = `${numbernye}@s.whatsapp.net`
 					var split = `${fake}`
@@ -1906,7 +1906,7 @@ break
                 case 'birthdayday':
                 case 'freefire':
 		if (!isRegistered) return reply(ind.noregis())
-                    if (args.length == 0) return reply(`Teks Mana Om? Contoh ${prefix + command} Ardy Store`)
+                    if (args.length == 0) return reply(`Teks Mana Om? Contoh ${prefix + command} Billy Store`)
 	                reply(ind.wait())
                     ini_txt = args.join(" ")
                     ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/ephoto1/${command}?apikey=${lolkey}&text=${ini_txt}`)
@@ -2209,7 +2209,7 @@ thumbnail: fs.readFileSync('src/Ardy.jpeg'),
 itemCount: 9999999999999999, // Bug
 status: 1,
 surface: 1,
-message: '️ArdyNihBosss',
+message: '️ BillyNihBosss',
 orderTitle: 'Mwehehe', // Idk what this does
 sellerJid: '0@s.whatsapp.net' // Seller
 }
@@ -2242,7 +2242,7 @@ break
 case 'sc':
 case 'sourcecode':
 if (!isRegistered) return reply(ind.noregis())
-reply('Bot Ini Menggunakan Script :\nhttps://github.com/ArdyBotzz/ArdyBotV9')
+reply('Bot Ini Menggunakan Script :\nMinta Owner Ya Om!')
 break
 				default:
             if (budy.includes(`assalamualaikum`)) {
@@ -2270,7 +2270,7 @@ break
                   const ceemde = fs.readFileSync('./src/sticker/dahjago.webp');
                   Ardy.sendMessage(from, ceemde, sticker)
                   }
-       if (budy.includes(`@6287863200063`)) {
+       if (budy.includes(`@628819300323`)) {
                   const ceemde = fs.readFileSync('./src/sticker/dahjago.webp');
                   reply(`Jangan Tag Owner Gw Tai😼`)
                   Ardy.sendMessage(from, ceemde, sticker)
